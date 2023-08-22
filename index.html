@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Pritam's Calculator</title>
+</head>
+<body>
+    <h1>Pritam's Calculator</h1>
+    <div class="container">
+        <div class="screen">
+            <input type="text" class="exp" placeholder="0" disabled>
+            <input type="text" class="ans" disabled>
+        </div>
+        <div class="keypad">
+            <div class="r1">
+                <button class="b1" onclick="clear1()"><p>AC</p></button>
+                <button class="b2" onclick="del1()"><p>Del</p></button>
+                <button class="b3" onclick="addexp('/')"><p>/</p></button>
+                <button class="b4" onclick="addexp('*')"><p>x</p></button>
+            </div>
+            <div class="r2">
+                <button class="b5" onclick="addexp('7')"><p>7</p></button>
+                <button class="b6" onclick="addexp('8')"><p>8</p></button>
+                <button class="b7" onclick="addexp('9')"><p>9</p></button>
+                <button class="b8" onclick="addexp('-')"><p>-</p></button>
+            </div>
+            <div class="r3">
+                <button class="b9" onclick="addexp('4')"><p>4</p></button>
+                <button class="b10" onclick="addexp('5')"><p>5</p></button>
+                <button class="b11" onclick="addexp('6')"><p>6</p></button>
+                <button class="b12" onclick="addexp('+')"><p>+</p></button>
+            </div>
+            <div class="r4">
+                <button class="b13" onclick="addexp('3')"><p>3</p></button>
+                <button class="b14" onclick="addexp('2')"><p>2</p></button>
+                <button class="b15" onclick="addexp('1')"><p>1</p></button>
+                <button class="b16" onclick="expAns()"><p>=</p></button>
+            </div>
+            <div class="r5">
+                <button class="b17" onclick="addexp('0')"><p>0</p></button>
+                <button class="b18" onclick="addexp('.')"><p>.</p></button>
+                <button class="b19" onclick="addexp(' ')"><p>space</p></button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
